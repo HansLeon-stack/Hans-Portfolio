@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Phone } from "lucide-react";
+import { Github, Linkedin, Mail, Phone, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
@@ -35,6 +35,16 @@ const Hero = () => {
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Contact Me
+            </Button>
+            <Button 
+              variant="secondary" 
+              size="lg"
+              asChild
+            >
+              <a href="/Hans_Leonard_CV.pdf" download="Hans_Leonard_CV.pdf">
+                <Download className="mr-2 h-4 w-4" />
+                Download CV
+              </a>
             </Button>
           </div>
 
